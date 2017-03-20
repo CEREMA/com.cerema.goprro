@@ -1,23 +1,23 @@
 {
     "namespace": "com.cerema.goprro",
-    "git": "https://github.com/CEREMA/com.cerema.goprro.git",
+    "git": "https://github.com/cerema/com.cerema.goprro.git",
     "title": "GOPRRO",
-    "description": "Suivi des visites des ouvrages de Protection contre les risques rocheux",
+    "description": "Suivi des visites des ouvrages de Protection<br>contre les risques rocheux",
     "platform": "desktop",
-    "uid": "rymoWtpsg",
-    "version": "0.0.1",
-    "build": "0",
+    "uid": "81a38e9a-fd9f-4326-97e1-d1bf61ee7b46",
+    "version": "0.0.2",
+    "build": 13,
     "targets": [
         "webapp"
     ],
-    "copyright": "Copyright (c) 2017 CEREMA",
-    "license": "bsd3",
+    "copyright": "Copyright (c) 2016 By CEREMA",
+    "license": "BSD",
     "author": {
-        "name": "Stéphane ZUCATTI",
-        "mail": "stephane.zucatti@me.com",
-        "twitter": "",
+        "name": "Stéphane Zucatti",
+        "mail": "stephane.zucatti@cerema.fr",
+        "twitter": "@mydearsz",
         "web": "",
-        "github": "https://github.com/CEREMA"
+        "github": ""
     },
     "team": {
         "debugger": [],
@@ -31,7 +31,7 @@
         {
             "name": "EXTJS",
             "type": "desktop",
-            "version": "6.0.1",
+            "version": "6.2.0",
             "theme": "classic",
             "style": "classic",
             "src": [
@@ -53,13 +53,23 @@
     "controllers": [
         "CMain"
     ],
-    "modules": [],
+    "modules": [
+        "Ext.ux.ribbon.Ribbon",
+        "Ext.ux.upload"
+    ],
     "plugins": [],
     "api": [
-        "MyService"
+        "Elements",
+        "Ouvrages",
+        "Notes",
+        "Docs"
     ],
-    "db": [],
-    "packages": [],
+    "db": [
+        "goprro"
+    ],
+    "packages": [
+        "shortid"
+    ],
     "icon": {
         "background": "#FFFFFF",
         "file": "app.png"
